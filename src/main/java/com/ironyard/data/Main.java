@@ -22,6 +22,10 @@ public class Main {
         love6v2();
         love6v3();
 
+        blackJackv1();
+        blackJackv2();
+        blackJackv3();
+        blackJackv4();
 
 
 
@@ -103,12 +107,52 @@ public class Main {
 
 
 
-
-//    private static void blackJackv1(){
-//
-//
-//
-//        System.out.printf("blackJack(%s, %s) -> %s\n", x, y, z);
-//    }
+    // (.4
+    private static void blackJackv1(){
+        List<Integer> x = new ArrayList<Integer>();
+        x.add(1);
+        x.add(7);
+        x.add(3);
+        List<Integer> y = new ArrayList<Integer>();
+        y.add(4);
+        y.add(10);
+        y.add(10);
+        String z = Kata.blackJack(x,y);
+        System.out.printf("blackJack(%s, %s) -> %s\n", x, y, z);
+    }
+    private static void blackJackv2(){
+        List<Integer> x = new ArrayList<Integer>();
+        x.add(1);
+        x.add(7);
+        x.add(3);
+        x.add(5);
+        List<Integer> y = new ArrayList<Integer>();
+        y.add(4);
+        y.add(10);
+        String z = Kata.blackJack(x,y);
+        System.out.printf("blackJack(%s, %s) -> %s\n", x, y, z);
+    }
+    private static void blackJackv3(){
+        List<Integer> x = new ArrayList<Integer>();
+        x.add(1);
+        x.add(7);
+        x.add(6);
+        List<Integer> y = new ArrayList<Integer>();
+        y.add(4);
+        y.add(10);
+        y.add(3);
+        String z = Kata.blackJack(x,y);
+        System.out.printf("blackJack(%s, %s) -> %s\n", x, y, z);
+    }
+    private static void blackJackv4(){
+        List<Integer> x = new ArrayList<Integer>();
+        x.add(30);
+        x.add(10);
+        List<Integer> y = new ArrayList<Integer>();
+        y.add(11);
+        y.add(10);
+        String z = Kata.blackJack(x,y);
+        System.out.printf("blackJack(%s, %s) -> %s\n", x, y, z);
+    }
 
 }
